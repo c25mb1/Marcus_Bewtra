@@ -4,10 +4,10 @@
 		/* #311E0F - DARK BROWN, #D1AE8D - Tan, #F4E4C9 - Whitish, #838562 - Sage, #525032 Pine */
 		/* Thin.otf, ThinOutline.otf, Regular.otf, RegularOutline.otf, Bold.otf, BoldOutline.otf */
 
+
 		a:link, a:visited {
 		    color: #F4E4C9;
 		}
-
 
 		@font-face {
 			font-family: "Thin";
@@ -185,6 +185,8 @@
 			text-align: center;
 		}
 
+
+
 		@keyframes greenify {
 			  0%   { 
 			  	background: 
@@ -281,7 +283,28 @@
 			  }	 
 		}
 
+		#map_box{
+			width: 34vw;
+			background-color: #525032;
+			display: inline-block;
+		}
 
+		.project_box {
+			left: 2vw;
+			background-color: #311E0F;
+			width: 96vw;
+			height: 138vw;
+			position: absolute;
+			top: 9vw;
+			border-radius: 6vw;
+			z-index: -1;
+		}
+
+		#ceramic_image {
+			width: 90vw;
+			margin: 3vw;
+			border-radius: 3vw;
+		}
 
 
 
@@ -323,7 +346,6 @@
 					<div>
 						<a href="ranch_life.html">Tower Defense</a>
 					</div>
-						
 				</div>
 				<div id="nav_dropdown_arch">
 					<div>
@@ -341,6 +363,14 @@
 			<div id="nav_title">Marcus Bewtra</div>
 		</div>
 
+	</div>
+
+	<div id="map_box">
+		
+		<div class="project_box">
+			<img id="ceramic_image" src="Ceramic_City_Image.png">
+			
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -400,5 +430,6 @@
 
 
 	</script>
+
 
 </body>

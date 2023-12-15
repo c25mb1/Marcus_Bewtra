@@ -8,7 +8,6 @@
 		    color: #F4E4C9;
 		}
 
-
 		@font-face {
 			font-family: "Thin";
 			src: url(Thin.otf);
@@ -38,6 +37,7 @@
 			font-family: 'Regular';
 			background-color: #F4E4C9;
 			margin: 0px;
+			text-decoration: none;
 		}
 
 
@@ -281,6 +281,81 @@
 			  }	 
 		}
 
+		#map_box{
+			width: 34vw;
+			background-color: #525032;
+			display: inline-block;
+		}
+
+		#map_art{
+			width: 33vw;
+			margin-top: 7vw;
+
+		}
+
+		.pin {
+			width: 2.5vw;
+			height: 4vw;
+			position: absolute;
+			background-image: url("pin_unhighlight.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+		}
+
+		#UES {
+			left: 11.5vw;
+			top: 32vw;
+		}
+
+		.project_box {
+			left: 36vw;
+			background-color: #311E0F;
+			width: 60vw;
+			height: 98vw;
+			position: absolute;
+			top: 9vw;
+			border-radius: 6vw;
+			z-index: -1;
+		}
+
+		.project_header {
+			text-align: center;
+			font-size: 5vw;
+			margin-top: 1vw;
+		}
+
+		#UES_section {
+			position: absolute;
+			width: 56vw;
+			margin-left: 2vw;
+			margin-top: 0vw;
+			border-radius: 3vw;
+
+		}
+
+		#UES_elevation {
+			position: absolute;
+			width: 28vw;
+			margin-left: 2vw;
+			margin-top: 42vw;
+			border-radius: 3vw;
+
+		}
+
+		#description_box {
+			position: absolute;
+			width: 26vw;
+			height: 40.75vw;
+			margin-left: 31vw;
+			margin-top: 42vw;
+			border-radius: 3vw;
+			background-color: #D1AE8D;
+			padding: 1vw;
+			font-size: 2vw;
+		}
+
 
 
 
@@ -343,6 +418,25 @@
 
 	</div>
 
+	<div id="map_box">
+		
+
+		<div class="pin" id="UES">
+			<div class="images_box"></div>
+		</div>
+		<div class="project_box" id="UES_box">
+			<h1 class="project_header">163 East 64th Street</h1>
+			<img id="UES_section" src="UES_section.png"></img>
+			<img id="UES_elevation" src="UES_elevation.png"></img>
+			<div id="description_box">
+				<h2>A hand-penciled/inked elevation and perspective section drawing of the townhouse on East 64th Street. </h2>
+			</div>
+		</div>
+
+
+		<img src="nyc_map.png" id="map_art">
+	</div>
+
 	<script type="text/javascript">
 
 		var comp_button_icon = document.getElementById('comp_button_icon');
@@ -400,5 +494,6 @@
 
 
 	</script>
+
 
 </body>
